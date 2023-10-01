@@ -16,6 +16,9 @@
 		25A914D62A78D2C900B47166 /* CPCLProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A914D52A78D2C900B47166 /* CPCLProjectTests.swift */; };
 		25A914E02A78D2C900B47166 /* CPCLProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A914DF2A78D2C900B47166 /* CPCLProjectUITests.swift */; };
 		25A914E22A78D2C900B47166 /* CPCLProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A914E12A78D2C900B47166 /* CPCLProjectUITestsLaunchTests.swift */; };
+		25A914F02A78D36200B47166 /* SPIndicator in Frameworks */ = {isa = PBXBuildFile; productRef = 25A914EF2A78D36200B47166 /* SPIndicator */; };
+		25A914F32A78D36C00B47166 /* Bluejay in Frameworks */ = {isa = PBXBuildFile; productRef = 25A914F22A78D36C00B47166 /* Bluejay */; };
+		25A914F52A78D68900B47166 /* DelayTimeMyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A914F42A78D68900B47166 /* DelayTimeMyController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		25A914DB2A78D2C900B47166 /* CPCLProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CPCLProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		25A914DF2A78D2C900B47166 /* CPCLProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCLProjectUITests.swift; sourceTree = "<group>"; };
 		25A914E12A78D2C900B47166 /* CPCLProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPCLProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		25A914F42A78D68900B47166 /* DelayTimeMyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelayTimeMyController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25A914F02A78D36200B47166 /* SPIndicator in Frameworks */,
+				25A914F32A78D36C00B47166 /* Bluejay in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,6 +107,7 @@
 			children = (
 				25A914BE2A78D2C800B47166 /* AppDelegate.swift */,
 				25A914C02A78D2C800B47166 /* SceneDelegate.swift */,
+				25A914F42A78D68900B47166 /* DelayTimeMyController.swift */,
 				25A914C22A78D2C800B47166 /* ViewController.swift */,
 				25A914C42A78D2C800B47166 /* Main.storyboard */,
 				25A914C72A78D2C900B47166 /* Assets.xcassets */,
@@ -143,6 +150,10 @@
 			dependencies = (
 			);
 			name = CPCLProject;
+			packageProductDependencies = (
+				25A914EF2A78D36200B47166 /* SPIndicator */,
+				25A914F22A78D36C00B47166 /* Bluejay */,
+			);
 			productName = CPCLProject;
 			productReference = 25A914BB2A78D2C800B47166 /* CPCLProject.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +226,10 @@
 				Base,
 			);
 			mainGroup = 25A914B22A78D2C800B47166;
+			packageReferences = (
+				25A914EE2A78D36200B47166 /* XCRemoteSwiftPackageReference "SPIndicator" */,
+				25A914F12A78D36C00B47166 /* XCRemoteSwiftPackageReference "bluejay" */,
+			);
 			productRefGroup = 25A914BC2A78D2C800B47166 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +275,7 @@
 			files = (
 				25A914C32A78D2C800B47166 /* ViewController.swift in Sources */,
 				25A914BF2A78D2C800B47166 /* AppDelegate.swift in Sources */,
+				25A914F52A78D68900B47166 /* DelayTimeMyController.swift in Sources */,
 				25A914C12A78D2C800B47166 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,6 +458,8 @@
 				DEVELOPMENT_TEAM = V23C68N65J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CPCLProject/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = Please;
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = Please;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -470,6 +488,8 @@
 				DEVELOPMENT_TEAM = V23C68N65J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CPCLProject/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = Please;
+				INFOPLIST_KEY_NSBluetoothPeripheralUsageDescription = Please;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -624,6 +644,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		25A914EE2A78D36200B47166 /* XCRemoteSwiftPackageReference "SPIndicator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ivanvorobei/SPIndicator";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		25A914F12A78D36C00B47166 /* XCRemoteSwiftPackageReference "bluejay" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/steamclock/bluejay.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		25A914EF2A78D36200B47166 /* SPIndicator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25A914EE2A78D36200B47166 /* XCRemoteSwiftPackageReference "SPIndicator" */;
+			productName = SPIndicator;
+		};
+		25A914F22A78D36C00B47166 /* Bluejay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 25A914F12A78D36C00B47166 /* XCRemoteSwiftPackageReference "bluejay" */;
+			productName = Bluejay;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 25A914B32A78D2C800B47166 /* Project object */;
 }
